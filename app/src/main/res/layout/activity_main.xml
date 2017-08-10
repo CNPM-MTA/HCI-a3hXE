@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cnpm.com.xe.activities.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/datxe"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/item_button"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="ĐẶT XE"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/danhsach"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/item_button"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="DANH SÁCH"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/timxe"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/item_button"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="TÌM XE"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+
+        <TextView
+            android:id="@+id/thoat"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/item_button"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="THOÁT"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="16dp"
+    android:orientation="vertical"
+    tools:context="cnpm.com.xe.activities.DatXe1Activity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:drawableLeft="@drawable/map1"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="Điểm đón:"
+                    android:textColor="#444"
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/diemdon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint=" Chọn điểm đón..."
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/icon_map"
+                    android:ellipsize="end"
+                    android:gravity="center|right"
+                    android:maxLines="1"
+                    android:text="Điểm đến:"
+                    android:textColor="#444"
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/diemden"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint=" Chọn điểm đến..."
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc" />e
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Số lượng: "
+                    android:textColor="#444"
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+
+                <EditText
+                    android:id="@+id/soluong"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:text="1"
+                    android:textColor="#444"
+                    android:typeface="serif" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Giá   :"
+                    android:textColor="#444"
+                    android:textSize="18sp"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/gia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="0 VNĐ"
+                    android:textColor="#ff3a3a"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+
+                <TextView
+                    android:id="@+id/khoangcach"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="0"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:text=" Km"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="Thời gian đi: "
+                    android:textColor="#444"
+                    android:textSize="18sp"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/giodi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:inputType="date"
+                    android:layerType="hardware"
+                    android:text="8AM"
+                    android:textColor="#444"
+                    android:textSize="16sp"
+                    android:typeface="serif"></TextView>
+
+                <TextView
+                    android:id="@+id/ngaydi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:inputType="date"
+                    android:layerType="hardware"
+                    android:text="7/6/2017"
+                    android:textColor="#444"
+                    android:textSize="16sp"
+                    android:typeface="serif"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/giove_ll"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="Thời gian về: "
+                    android:textColor="#444"
+                    android:textSize="18sp"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/giove"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:inputType="date"
+                    android:layerType="hardware"
+                    android:text="8AM"
+                    android:textColor="#444"
+                    android:textSize="16sp"
+                    android:typeface="serif"></TextView>
+
+                <TextView
+                    android:id="@+id/ngayve"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:inputType="date"
+                    android:layerType="hardware"
+                    android:text="7/6/2017"
+                    android:textColor="#444"
+                    android:textSize="16sp"
+                    android:typeface="serif"></TextView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/loaixe"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/car1"
+                    android:gravity="center|right"
+                    android:text="Xe 4 chỗ"
+                    android:textColor="#444"
+                    android:textSize="18sp"
+                    android:typeface="serif" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Kiểu đi"
+                    android:textColor="#444" />
+
+                <RadioButton
+                    android:id="@+id/motchieu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="Một chiều" />
+
+                <RadioButton
+                    android:id="@+id/khuhoi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Khứ hồi" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Ghi chú: "
+                    android:textColor="#444"
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+
+                <EditText
+                    android:id="@+id/ghichu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:textSize="18sp"
+                    android:typeface="serif" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Mã khuyến mãi: "
+                    android:textColor="#444"
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+
+                <EditText
+                    android:id="@+id/makhuyenmai"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:textSize="18sp"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/datxe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/item_button"
+            android:text="ĐẶT XE"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:typeface="serif" />
+    </LinearLayout>
+</RelativeLayout>
